@@ -62,8 +62,8 @@ const createMyCar = function() {
 const drawEnemies = function() {
     enemies = [];
     const enemy = new Enemy(0);
-    const enemy2 = new Enemy(-200);
-    const enemy3 = new Enemy(-410);
+    const enemy2 = new Enemy(-290);
+    const enemy3 = new Enemy(-550);
 
     createRoad();
     createMyCar();
@@ -158,7 +158,7 @@ function checkCollision() {
 const startGame = function() {
     drawEnemies();
     gameOver = false;
-    laneSpeed = 2;
+    laneSpeed = 2.2;
     lanePosition = 1;
     setMoveEvents();
     increaseSpeed();
