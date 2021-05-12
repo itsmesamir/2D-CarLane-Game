@@ -9,6 +9,7 @@ const scoreDiv = document.getElementById('score');
 const scoreCount = document.getElementById('score-count');
 
 const afterGame = document.getElementById('after-game');
+const beatHighScore = document.getElementById('beatHighScore');
 const yourScore = document.getElementById('current-score');
 const highScore = document.getElementById('high-score');
 
@@ -84,7 +85,10 @@ const updateHighScore = function() {
     if (score > highScore.innerHTML) {
         localStorage.setItem("high-score", score);
         highScore.innerHTML = score;
-    };
+        beatHighScore.innerHTML = 'Congratulations, you have beaten the high score.';
+    } else {
+        beatHighScore.innerHTML = 'Oops, you could not beat the high score.';
+    }
     score = 0;
 }
 
