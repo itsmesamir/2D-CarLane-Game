@@ -26,7 +26,7 @@ let gameOver = false;
 let lanePosition = 1;
 const createRoad = function() {
     const road = new Image();
-    road.src = '../images/road.png';
+    road.src = './images/road.png';
     road.onload = function() {
         let height = 0 - canvas.height;
         const animateRoad = function() {
@@ -46,7 +46,7 @@ const createRoad = function() {
 
 const createMyCar = function() {
     const myCar = new Image();
-    myCar.src = '../images/my-car.png';
+    myCar.src = './images/my-car.png';
     myCar.onload = function() {
         const animateMyCar = function() {
             ctx.drawImage(myCar, carHorPosition[lanePosition], carTopPosition, 110, carHeight);
