@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="startup-instruction" id="before-game">
+        <div class="heading">
+            <h1>Car Racing Game</h1>
+        </div>
+        <h2>Instructions</h2>
+        <h4>Press 'A' to move left.</h4>
+        <h4>Press 'D' to move right.</h4>
+        <p>Press <b>'Space Bar'</b> to shoot a bullet.</p>
+        <p>Avoid collision with other cars.</p>
+        <p>Each time you cross a car your score will be updated by 1.</p>
+        <div class="play">Play</div>
+    </div>
+    <div class="bullet" id="bullet">
+        <img src="./images/bullet.png" alt="bullet-img">
+    </div>
+    <div class="score" id="score">Score: <span id="score-count"></span></div>
+    <div class="game-end" id="after-game">
+        <div class="heading">
+            <h1>Game Over</h1>
+        </div>
+        <h3>Your Score:</h3><span id="current-score"></span>
+        <h3>High Score:</h3><span id="high-score"></span>
+        <div class="play">Play Again</div>
+    </div>
+    <canvas></canvas>
+    <script src="./js/constant.js"></script>
+    <script src="./js/enemy.js"></script>
+    <script src="./js/canvas.js"></script>
+</body>
+
+</html>
