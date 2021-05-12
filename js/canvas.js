@@ -145,8 +145,8 @@ const handleGameOver = function() {
 }
 
 function checkCollision() {
-    for (let obstracle of enemies)
-        if (Math.abs(carTopPosition - obstracle.y) < carHeight && obstracle.lane === lanePosition) {
+    for (let enemy of enemies)
+        if (Math.abs(carTopPosition - enemy.y) < carHeight && enemy.lane === lanePosition) {
             handleGameOver();
         }
     if (gameOver) {
